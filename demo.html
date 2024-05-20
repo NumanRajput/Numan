@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Sign IN FORM</h1>
+        <script>
+        function ValidateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("First Name must be filled out");
+                return false;
+            }
+        }
+        function create(){
+            window.location="products.html"
+        }
+        </script>
+</head>    
+<body>
+    <p>Please sign in to use the website</p>
+    <form name="myForm" action="signup.html" method="post" onsubmit="return ValidateForm()">
+        <input type="text" name="fname" placeholder="first name">
+        <input type="password" placeholder="password">
+        <input style="background-color: rgb(15, 154, 172);"type="button" value="sign-in" onclick="ValidateForm()"> 
+        <!-- <input style="background-color: brown;" type="submit" name="submit"> -->
+    </form>
+
+    
+
+     
+</body>
+
+
+
+</html>
